@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS: что уже пора использовать?</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="shower/themes/ribbon/styles/styles.css">
+    <link rel="stylesheet" href="index.css">
+    <style>
+        .shower {
+            --slide-ratio: calc(16 / 9);
+        }
+    </style>
+</head>
+<body class="shower list">
+
+    <header class="caption">
+        <h1>CSS: что уже пора использовать?</h1>
+        <p>Sergey Dudnyk, Onix-Systems</p>
+    </header>
+
+    <section class="slide clear" id="s0">
+    </section>
+
+    <section class="slide clear" id="s1">
+      <img src="pictures/CSS.gif" class="cover" width="417" height="315">
+      <p class="center-text cover">Что уже пора использовать?</p>
+    </section>
+
+    <section class="slide clear">
+      <img src="pictures/css3-logo.png" class="cover">
+    </section>
+
+    <section class="slide clear" id="s3">
+      <img src="pictures/fe.png" class="cover">
+    </section>
+
+    <section class="slide" id="s4">
+      <h2 class="shout">Flexbox</h2>
+    </section>
+
+    <section class="slide">
+      <img src="pictures/flexbox.png" class="cover">
+    </section>
+
+    <!-- <section class="slide">
+      <img src="pictures/div-pyramid.jpg" class="cover">
+    </section> -->
+
+    <section class="slide" id="s7">
+      <div class="wrapper">
+        <div class="item">
+          <img src="pictures/parrots/папуг1.jpg">
+          <p>Right strong transvaluation good holiest moral war free convictions depths free.</p>
+        </div>
+        <div class="item">
+          <img src="pictures/parrots/папуг2.jpg">
+          <p>Depths reason zarathustra evil contradict abstract sexuality war victorious revaluation battle joy ascetic justice. </p>
+        </div>
+        <div class="item">
+          <img src="pictures/parrots/папуг3.jpg">
+          <p>Right spirit hope mountains victorious ideal. Contradict of ocean strong deceptions madness decieve salvation snare superiority sea hatred snare depths.
+          Pious horror against burying passion insofar.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide">
+      <img src="pictures/flex-align.jpg" class="cover">
+    </section>
+
+    <section class="slide" id="s9">
+      <div class="wrapper cover">
+        <div class="item" style="flex-shrink: 2;">shrink 2</div>
+        <div class="item" style="flex-grow: 1;">grow 1</div>
+        <div class="item" style="flex-grow: 3;">grow 3</div>
+        <div class="item" style="flex-grow: 5; margin-right: 0;">grow 5</div>
+      </div>
+    </section>
+
+    <section class="slide" id="s10">
+  		<h2>Flex Order</h2>
+  		<pre>
+        <code>.first-flex-child {</code>
+  			<code>    <mark>order</mark>: 2; </code>
+  			<code>    }</code>
+  			<code>    </code>
+        <code>.second-flex-child {</code>
+  			<code>    <mark>order</mark>: 1; </code>
+  			<code>    }</code>
+  		</pre>
+  	</section>
+
+    <section class="slide clear" id="s11">
+      <div class="wrapper">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item -ad">AD</div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+      </div>
+    </section>
+
+    <section class="slide clear" id="s12">
+      <div class="wrapper">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item -ad">AD</div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+      </div>
+    </section>
+
+    <section class="slide clear" id="s13">
+      <div class="wrapper">
+        <div class="item"></div>
+        <div class="item -ad">AD</div>
+        <div class="item"></div>
+        <div class="item"></div>
+      </div>
+    </section>
+
+    <section class="slide clear" id="s14">
+      <img src="pictures/caniuse/flexbox.png" class="cover">
+    </section>
+
+    <!--  -->
+    <!--  -->
+    <!--  -->
+
+    <section class="slide" id="s15">
+      <h2 class="shout">CSS Grid Layout</h2>
+    </section>
+
+    <section class="slide clear">
+      <img src="pictures/grid.jpg" class="cover">
+    </section>
+
+    <!-- <section class="slide">
+  		<h2>Немножко гридов</h2>
+  		<pre>
+        <code><mark>.sample</mark> {</code>
+  			<code>	grid-template-<mark>columns</mark>: 200px <mark>1fr</mark> 100px;</code>
+  			<code>	grid-template-<mark>rows</mark>:	200px <mark>1fr</mark> 100px;</code>
+  			<code>	}</code>
+  		</pre>
+    </section>
+
+    <section class="slide clear">
+  		<div class="sample sample--three-cols-rows">
+  			<div class="sample__item"></div>
+  			<div class="sample__item"></div>
+  			<div class="sample__item"></div>
+  			<div class="sample__item"></div>
+  			<div class="sample__item"></div>
+  			<div class="sample__item"></div>
+  			<div class="sample__item"></div>
+  			<div class="sample__item"></div>
+  			<div class="sample__item"></div>
+  		</div>
+  	</section> -->
+
+
+    <section class="slide clear">
+      <img src="pictures/caniuse/grid.png" class="cover">
+    </section>
+
+    <!--  -->
+    <!--  -->
+    <!--  -->
+
+    <section class="slide">
+      <h2 class="shout">@supports</h2>
+    </section>
+
+    <section class="slide">
+      <h2>@supports</h2>
+      <pre>
+        <code><mark>@supports(prop:value)</mark> {</code>
+        <code>    <span class="comment">/* тут стили */</span> </code>
+        <code>    }</code>
+      </pre>
+    </section>
+
+    <section class="slide">
+      <h2>@supports flex/float</h2>
+      <pre>
+        <code>@supports(display: flex) {</code>
+        <code>    div { float: left; }</code>
+        <code>    }</code>
+      </pre>
+    </section>
+
+    <section class="slide">
+      <h2>@supports mix</h2>
+      <pre>
+        <code>@supports (display: -webkit-flex) <mark>or</mark></code>
+        <code>          (display: -moz-flex) <mark>or</mark></code>
+        <code>          (display: flex) {</code>
+        <code>    <span class="comment">/* стили */</span></code>
+        <code>    }</code>
+        <code></code>
+        <code>@supports (display: flex) <mark>and</mark> (-webkit-appearance: caret) {</code>
+        <code>    <span class="comment">/* и тут стили */</span></code>
+        <code>    }</code>
+      </pre>
+    </section>
+
+    <section class="slide">
+      <h2>@supports from js</h2>
+      <pre>
+        <code>var supportsFlex = CSS.supports("display", "flex");</code>
+        <code> </code>
+        <code><span class="comment">/* кейс для Opera: */</span></code>
+        <code>var supportsCSS = !!((window.CSS && window.CSS.supports)</code>
+        <code>                   || window.supportsCSS || false);</code>
+      </pre>
+    </section>
+
+    <section class="slide clear">
+      <img src="pictures/caniuse/supports.png" class="cover">
+    </section>
+
+    <!--  -->
+    <!--  -->
+    <!--  -->
+
+    <section class="slide">
+      <h2 class="shout">CSS Custom Properties</h2>
+    </section>
+
+    <section class="slide">
+      <h2>Custom Property declaration</h2>
+      <pre>
+        <code>:root {</code>
+        <code>    --main-color: #DEADC0DE;</code>
+        <code>    }</code>
+      </pre>
+    </section>
+
+    <section class="slide">
+      <h2>Custom Property getting</h2>
+      <pre>
+        <code>.box {</code>
+        <code>   color: var(--main-color, black);</code>
+        <code>    }</code>
+      </pre>
+    </section>
+
+    <section class="slide">
+      <h2>Custom Property</h2>
+      <pre>
+        <code>:root {</code>
+        <code>   --font-size-xl: calc(var(--base-font-size) + 10px);</code>
+        <code>   --font-size-l: calc(var(--base-font-size) + 4px);</code>
+        <code>    }</code>
+        <code> </code>
+        <code>:root {</code>
+        <code>   --color: black;</code>
+        <code>    }</code>
+        <code>.box-black {</code>
+        <code>   --color: white;</code>
+        <code>    }</code>
+      </pre>
+    </section>
+
+    <section class="slide clear">
+      <img src="pictures/caniuse/variables.png" class="cover">
+    </section>
+
+    <!--  -->
+    <!--  -->
+    <!--  -->
+
+    <section class="slide">
+      <h2 class="shout">clip-path</h2>
+    </section>
+
+    <section class="slide">
+      <h2>Clip-path triangle</h2>
+      <pre>
+        <code>.clipClass {</code>
+        <code>   clip-path: polygon(0 100%, 50% 0, 100% 100%);</code>
+        <code>    }</code>
+      </pre>
+    </section>
+
+    <section class="slide" id="clip-triangle">
+      <div class="wrapper">
+        <div class="clipPolygon"></div>
+      </div>
+    </section>
+
+    <section class="slide">
+      <h2>Clip-path circle</h2>
+      <pre>
+        <code>.clipClass {</code>
+        <code>   clip-path: circle(50% at 50% 50%);</code>
+        <code>    }</code>
+      </pre>
+    </section>
+
+    <section class="slide" id="clip-circle">
+      <div class="wrapper">
+        <div class="clipCircle"></div>
+      </div>
+    </section>
+
+    <section class="slide">
+      <h2>Clip-path star</h2>
+      <pre>
+        <code>.clipClass {</code>
+        <code>   clip-path: polygon(50% 0%, 63% 38%, 100% 38%, 69% 59%, </code>
+        <code>      82% 100%, 50% 75%, 18% 100%, 31% 59%, 0% 38%, 37% 38%);</code>
+        <code>    }</code>
+      </pre>
+    </section>
+
+    <section class="slide" id="clip-star">
+      <div class="wrapper">
+        <div class="clipStar  "></div>
+      </div>
+    </section>
+
+
+    <section class="slide clear">
+      <img src="pictures/caniuse/clip-path.png" class="cover">
+    </section>
+
+    <!--  -->
+    <!--  -->
+    <!--  -->
+
+    <section class="slide">
+      <h2 class="shout">object-fit</h2>
+    </section>
+
+    <section class="slide" id="objfit">
+      <div class="wrapper">
+        <div class="item">
+          <p>object-fit: fill</p>
+          <div class="element">
+            <img src="pictures/objfit.jpeg" class="-fill">
+          </div>
+        </div>
+        <div class="item">
+          <p>object-fit: contain</p>
+          <div class="element">
+            <img src="pictures/objfit.jpeg" class="-contain">
+          </div>
+        </div>
+        <div class="item">
+          <p>object-fit: cover</p>
+          <div class="element">
+            <img src="pictures/objfit.jpeg" class="-cover">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide clear">
+      <img src="pictures/caniuse/object-fit.png" class="cover">
+    </section>
+
+    <!--  -->
+    <!--  -->
+    <!--  -->
+
+    <section class="slide">
+      <h2 class="shout">CSS Filters</h2>
+    </section>
+
+    <section class="slide">
+      <img src="pictures/filter.jpeg" class="cover">
+    </section>
+
+    <section class="slide">
+      <img src="pictures/filter.jpeg" class="cover blur">
+    </section>
+
+    <section class="slide">
+      <img src="pictures/filter.jpeg" class="cover bright">
+    </section>
+
+    <section class="slide">
+      <img src="pictures/filter.jpeg" class="cover grayscale">
+    </section>
+
+    <section class="slide clear">
+      <img src="pictures/caniuse/filter.png" class="cover">
+    </section>
+
+    <!--  -->
+    <!--  -->
+    <!--  -->
+
+    <section class="slide">
+      <h2 class="shout">will-change</h2>
+    </section>
+
+    <section class="slide">
+      <h2>translate3d hack</h2>
+      <pre>
+        <code>.accelerate {</code>
+        <code>    -webkit-transform: translate3d(0, 0, 0);</code>
+        <code>    }</code>
+      </pre>
+    </section>
+
+    <section class="slide">
+      <h2>Wrong will-change for hover</h2>
+      <pre>
+        <code>.will-change {</code>
+        <code>    transition: transform 0.5s;</code>
+        <code>    }</code>
+        <code> </code>
+        <code>.will-change:hover {</code>
+        <code>    <mark>will-change: transform;</mark></code>
+        <code>    transform: scale(1.5);</code>
+        <code>    }</code>
+      </pre>
+    </section>
+
+    <section class="slide clear">
+      <img src="pictures/browser-engine.png" class="cover">
+    </section>
+
+    <section class="slide">
+      <h2>Wrong will-change for hover</h2>
+      <pre>
+        <code>.will-change {</code>
+        <code>    <mark>will-change: transform;</mark></code>
+        <code>    transition: transform 0.5s;</code>
+        <code>    }</code>
+        <code> </code>
+        <code>.will-change:hover {</code>
+        <code>    transform: scale(1.5);</code>
+        <code>    }</code>
+      </pre>
+    </section>
+
+    <section class="slide">
+      <h2>will-change for hover</h2>
+      <pre>
+        <code>.will-change-parent:hover .will-change {</code>
+        <code>    <mark>will-change: transform;</mark></code>
+        <code>    }</code>
+        <code>.will-change { transition: transform 0.5s; }</code>
+        <code>.will-change:hover {</code>
+        <code>    transform: scale(1.5);</code>
+        <code>    }</code>
+      </pre>
+    </section>
+
+
+    <section class="slide clear">
+      <img src="pictures/caniuse/will-change.png" class="cover">
+    </section>
+
+    <section class="slide clear black">
+      <img src="pictures/folks.png" class="cover">
+    </section>
+
+    <section class="slide">
+      <h2 class="shout">Вопросы?</h2>
+    </section>
+<!--  -->
+<!--  -->
+<!--  -->
+
+
+    <div class="progress"></div>
+
+    <script src="shower/shower.min.js"></script>
+    <!-- Copyright © 2018 Yours Truly, Famous Inc. -->
+
+</body>
+</html>
